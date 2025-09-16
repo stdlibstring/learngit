@@ -38,5 +38,4 @@ int main(void) {
   StudentNumber(Grade, Degree, Number);
   return 0;
 }
-// test
-// test for git diff
+
