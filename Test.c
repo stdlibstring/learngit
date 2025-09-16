@@ -7,33 +7,35 @@ int grade_mul;
 int degree_mul;
 
 void StudentNumber(int u[], int v[], int k[]) {
-    int grade;
-    int degree;
-    int number;
-    int result;
-    grade = u[0];
-    degree = v[0];
-    number = k[0];
-    result = grade * grade_mul + degree * degree_mul + number;
-    // ÈôÑ§ºÅÇ°×º²»ÊÇ PB ¿ÉÓÚ´ËĞŞ¸Ä
-    printf("PB%d\n",result);
-    return;
+  int grade;
+  int degree;
+  int number;
+  int result;
+  grade = u[0];
+  degree = v[0];
+  number = k[0];
+  result = grade * grade_mul + degree * degree_mul + number;
+  // è‹¥å­¦å·å‰ç¼€ä¸æ˜¯ PB å¯äºæ­¤ä¿®æ”¹
+  printf("PB%d\n", result);
+  return;
 }
 
 /**
- * @brief ĞŞ¸Ä main º¯ÊıÖĞµÄĞÅÏ¢Êä³öÄãµÄÑ§ºÅ
+ * @brief ä¿®æ”¹ main å‡½æ•°ä¸­çš„ä¿¡æ¯è¾“å‡ºä½ çš„å­¦å·
  *
- * @param Grade[0]: ÄãµÄÄê¼¶£¬Èç 20£¬21£¬22 µÈ
- * @param Degree[0]: ÄãµÄ×¨Òµ´úºÅ£¬Èç¼Æ¿ÆÊÇ 11
- * @param Number[0]: ÄãµÄÑ§ÉúĞòºÅ£¬Èç 0011£¨ÎªÁË±ÜÃâ³öÏÖ°Ë½øÖÆ£¬Õâ¸öÖµ²»ÄÜÒÔ0Îª¿ªÍ·£©£¬4514 µÈ
+ * @param Grade[0]: ä½ çš„å¹´çº§ï¼Œå¦‚ 20ï¼Œ21ï¼Œ22 ç­‰
+ * @param Degree[0]: ä½ çš„ä¸“ä¸šä»£å·ï¼Œå¦‚è®¡ç§‘æ˜¯ 11
+ * @param Number[0]: ä½ çš„å­¦ç”Ÿåºå·ï¼Œå¦‚
+ * 0011ï¼ˆä¸ºäº†é¿å…å‡ºç°å…«è¿›åˆ¶ï¼Œè¿™ä¸ªå€¼ä¸èƒ½ä»¥0ä¸ºå¼€å¤´ï¼‰ï¼Œ4514 ç­‰
  * @return int
  */
 int main(void) {
-    Grade[0] = 23;
-    Degree[0] = 02;
-    Number[0] = 465;
-    grade_mul = 1000000;
-    degree_mul = 10000;
-    StudentNumber(Grade,Degree,Number);
-    return 0;
+  Grade[0] = 23;
+  Degree[0] = 02;
+  Number[0] = 465;
+  grade_mul = 1000000;
+  degree_mul = 10000;
+  StudentNumber(Grade, Degree, Number);
+  return 0;
 }
+// test
